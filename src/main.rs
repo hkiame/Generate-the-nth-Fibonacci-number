@@ -1,7 +1,7 @@
 use std::io;
 fn main() {
     let mut num = String::new();
-    io::stdin().read_line(&mut num).expect("Failed o read line.");
+    io::stdin().read_line(&mut num).expect("Failed to read line.");
 
     let num: i64 = match num.trim().parse(){
         Ok(num) => num,
